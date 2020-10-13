@@ -9,14 +9,22 @@ OSAI is built using flask to support the website infrastructure
 
 
 Currently completed:
-User Authentication (Signin/signout/sessionManagement)
-Interfacing with OsrsDB to obtain Runescape data see: (https://github.com/osrsbox/osrsbox-db)
+
+User Authentication (Signin/signout/sessionManagement),
+Interfacing with OsrsDB to obtain Runescape data see: (https://github.com/osrsbox/osrsbox-db),
+Referencing Jinja2 rednered code to create dynamic pages based off of a template,
+Hashing User Passwords,
+Creating a Base Css tempalte to visualize and understand website layout,
+Reading and wrtiting to a MYSQL database without any errors or discrepensies in the database,
+
 
 In Progress:
-User Navigation
-AI Algorithm
-User interfacing with OSRSDB and displaying item statistics 
+
+User Navigation,
+AI Algorithm,
+User interfacing with OSRSDB and displaying item statistics,
 Moving the package into an acceptable structure to handle a large application rather than running out of template.py
+Understand how to pull information from osrsDB database and convert that data into something that a machine learning algorithm can understand 
 
 Usage: 
   future usage of this project is hopefully projected at all users that play runescape, using this website as an extra ability to get an idea of what gear should be used at each monster in the game. 
