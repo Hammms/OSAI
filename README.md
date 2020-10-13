@@ -6,7 +6,7 @@ OSAI's goal is an attempt to bring artificial Intelligence into Old School Runes
 This project was made to train and test my skills with web-based programming as well as AI-based programming. 
 
 OSAI is built using flask to support the website infrastructure 
-How the Algorithm will be built is still a work in progress i am expecting to scikit learn and other python packages such as tensorflow. 
+How the Algorithm will be built is still a work in progress i am expecting to usee scikit learn and other python packages such as tensorflow. 
 
 Currently completed:
 
