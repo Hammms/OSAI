@@ -16,6 +16,7 @@ In Progress:
 User Navigation
 AI Algorithm
 User interfacing with OSRSDB and displaying item statistics 
+Moving the package into an acceptable structure to handle a large application rather than running out of template.py
 
 Usage: 
   future usage of this project is hopefully projected at all users that play runescape, using this website as an extra ability to get an idea of what gear should be used at each monster in the game. 
