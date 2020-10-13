@@ -7,7 +7,7 @@ This project was made to train and test my skills with web-based programming as 
 
 OSAI is built using flask to support the website infrastructure 
 
-However the Algorithm will be built is still a work in progress i am expecting to usee scikit learn and other python packages such as tensorflow. 
+However the Algorithm will be built is still a work in progress i am expecting to use scikit learn and other python packages such as tensorflow. 
 
 Currently completed:
 
