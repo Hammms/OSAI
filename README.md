@@ -30,4 +30,4 @@ Usage:
   future usage of this project is hopefully projected at all users that play runescape, using this website as an extra ability to get an idea of what gear should be used at each monster in the game. 
   
 License: 
-  I am still new and have no went into much understanding of Licenses yet. I do not expect anything in this project to have a large monitary value since it is just based off of a video game with alot of data. 
+  I am still new and have not went into much understanding of Licenses yet. I do not expect anything in this project to have a large monitary value since it is just based off of a video game with alot of data. 
