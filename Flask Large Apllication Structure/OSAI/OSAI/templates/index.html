@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="static\unknown.png"></script>
+</head>
+<body>
+  {% block nav %}
+  <div id="menu">
+    <div class="pure-menu">
+        <a class="pure-menu-heading" href="{{ url_for('index') }}">Name</a>
+
+        <ul class="pure-menu-list">
+            {% if current_user.is_authenticated %}
+            <li class="pure-menu-item"><a href="{{ url_for('logout') }}" class="pure-menu-link">Logout</a></li>
+            {% else %}
+            <li class="pure-menu-item"><a href="{{ url_for('signin') }}" class="pure-menu-link">Sign in</a></li>
+            <li class="pure-menu-item"><a href="{{ url_for('about')}}" class="pure-menu-link">About</a></li>
+            {% endif %}
+            <li class="pure-menu-item menu-item-divided pure-menu-selected">
+                <a href="#" class="pure-menu-link">Terms</a>
+            </li>
+
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block div %}
+<div id="main">
+  <div class="header">
+      <h1>Logo</h1>
+  </div>
+
+  <div class="content ">
+      <h2 class="content-subhead">How to use this layout</h2>
+      <p>
+          To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/layouts/side-menu/styles.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
+      </p>
+
+
+      <div class="equipment_grid">
+         <img  src="static\Worn_equipment_tab.png" alt="Train">
+
+          <div class='helmet'>
+              <img  src="data:image/jpeg;base64,{{ image }}" alt="Peyto Lake">
+          </div>
+
+          <div class="cape">
+              <img  src="data:image/jpeg;base64,{{ image }}" alt="Train">
+          </div>
+
+          <div class="neck">
+              <img  src="data:image/jpeg;base64,{{ image }}"   alt="Train">
+          </div>
+
+          <div class="ammo">
+          <img  src="data:image/jpeg;base64,{{ image }}" alt="Train" onclick="{{ image }}">
+          </div>
+
+          <div class="weapon">
+            <img  src="data:image/jpeg;base64,{{ image }}" alt="Train">
+          </div>
+
+          <div class="chest">
+            <img  src="data:image/jpeg;base64,{{ image }}" alt="Train">
+          </div>
+
+          <div class="sheild">
+            <img  src="data:image/jpeg;base64,{{ image }}" alt="Train">
+          </div>
+
+          <div class="legs">
+            <img  src="data:image/jpeg;base64,{{ image }}" alt="Train">
+          </div>
+
+          <div class="gloves">
+            <img  src="data:image/jpeg;base64,{{ image }}" alt="Train">
+          </div>
+
+          <div class="boots">
+            <img  src="data:image/jpeg;base64,{{ image }}" alt="Train">
+          </div>
+
+          <div class="ring">
+            <img  src="data:image/jpeg;base64,{{ image }}" alt="Train">
+          </div>
+       </div>
+
+      
+
+    </div>
+
+   
+  </div>
+</div>
+{% endblock %}
+</body>
+</html>
