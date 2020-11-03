@@ -11,6 +11,10 @@ Searchbar class names:
   
 }
 
+img:focus {
+  outline: 3px solid blue;
+}
+
 .content {
   float: left;
   /* position: relative;
@@ -59,8 +63,13 @@ for the equipment grid
   position: absolute;
   top: 14px;
   left: 85px;
-  
 }
+
+.helmet:focus
+{
+outline-style: 50px solid blue;
+}
+
 .cape
 {
   position: absolute;

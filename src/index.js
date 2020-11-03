@@ -3,52 +3,24 @@ import ReactDOM from 'react-dom';
 import './main.css';
 import worn_equipment_tab from './Worn_equipment_tab.png'
 import axios from 'axios';
-
+import RenderSideBar from './sidebar.js';
+import RenderLogo from './logo.js';
+ var i =0;
 
 
 class Post extends React.Component{
   
 // all of the properties and componets of this webapp will be placed here
 // these are going to be parts such as sidebar logo and main content 
-        renderSideBar() {
-        return (
-            <div id="menu">
-        <div className="pure-menu">
-            <a className="pure-menu-heading" href="{{ url_for('index') }}">Name</a>
     
-            <ul className="pure-menu-list">
-                <li className="pure-menu-item"><a href="{{ url_for('logout') }}" className="pure-menu-link">Logout</a></li>
-                <li className="pure-menu-item"><a href="{{ url_for('signin') }}" className="pure-menu-link">Sign in</a></li>
-                <li className="pure-menu-item"><a href="{{ url_for('about')}}" className="pure-menu-link">About</a></li>
-                <li className="pure-menu-item menu-item-divided pure-menu-selected">
-                    <a href="#" className="pure-menu-link">Terms</a>
-                </li>
-    
-                <li className="pure-menu-item"><a href="#" className="pure-menu-link">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-        );
-    }
-
-        renderLogo() {
-            return (
-                <div className="header">
-                <h1 className="reee">Logo</h1>
-                </div>
-            );
-        }
-
-
 
     // These two are used for collecting all parts of the page
     //then compiling it into one renderable package
      renderPost = () => {
         return (
          <div className="NavLogo">
-            { this.renderSideBar() }
-            { this.renderLogo() }
-            
+            <RenderSideBar />
+            <RenderLogo />
           </div>
         );
      }
@@ -60,8 +32,6 @@ class Post extends React.Component{
     }
 
 }
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 class Search extends Post {
@@ -578,11 +548,14 @@ class Search extends Post {
 
     dynamicSearch = () => {
             
+        // i am able now to generate a base line of code and change it based off of different curcumstances 
+        // i now need to find out how to reference a focus attribute
+        i++
+        if(i == 1)
+            return  this.state.helmets.filter(output => output.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
 
-        return  this.state.helmets.filter(output => output.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+        return this.state.ammo.filter(output => output.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
     }
-
-
 
     render(){
         return(
@@ -699,9 +672,8 @@ window.onload = function(){
              {
              console.log("reeeee")
             } else {
-               
               var equiptabselect = event.target.getAttribute("title")
-                // console.log(equiptabselect)
+              
                return equiptabselect
                
             }
@@ -709,6 +681,7 @@ window.onload = function(){
     
     });
 
+    
 
 
 
