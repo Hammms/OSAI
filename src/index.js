@@ -39,104 +39,7 @@ class Post extends React.Component{
             );
         }
 
-        renderContent() {
-            return (
-               
-      
-                <div className="equipment_grid">
-                   <img  src= {worn_equipment_tab} alt="Train"/>
-          
-                    <div className='helmet'>
-                        <img className="helmet_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-head.json" title="helmets"/>
-                    </div>
-          
-                    <div className="cape">
-                        <img className="cape_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-cape.json" title="capes"/>
-                    </div>
-          
-                    <div className="neck">
-                        <img className="neck_img" src="#"   alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-neck.json" title="necks"/>
-                    </div>
-          
-                    <div className="ammo">
-                    <img  className="ammo_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-ammo.json" title="ammo"/>
-                    </div>
-          
-                    <div className="weapon">
-                      <img className="weapon_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-weapon.json" title="weapons" />
-                    </div>
-          
-                    <div className="chest">
-                      <img className="chest_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-body.json" title="chests"/>
-                    </div>
-          
-                    <div className="sheild">
-                      <img className="sheild_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-shield.json" title="sheilds"/>
-                    </div>
-          
-                    <div className="legs">
-                      <img className="legs_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-legs.json" title="legs" />
-                    </div>
-          
-                    <div className="gloves">
-                      <img className="gloves_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-hands.json" title="gloves" />
-                    </div>
-          
-                    <div className="boots">
-                      <img className="boots_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-feet.json" title="boots" />
-                    </div>
-          
-                    <div className="ring">
-                      <img className="ring_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-ring.json" title="rings" />
-                    </div>
-                 </div>
-          
-           
-          
-              
-           
-            );
-        }
 
-        renderStats()
-        {
-            return(
-                <div id="bonuses-output">
-                    <strong>Attack bonus</strong>
-                    <br/> 
-                    <ul>
-                        <li>Stab: +0</li>
-                        <li>Slash: +0</li> 
-                        <li>Crush: +0</li>
-                        <li>Magic: +0</li> 
-                        <li>Range: +0</li>
-                    </ul> 
-                    <strong>Defence bonus</strong>
-                    <br/> 
-                    <ul>
-                        <li>Stab: +0</li> 
-                        <li>Slash: +0</li>
-                        <li>Crush: +0</li>
-                        <li>Magic: +0</li> 
-                        <li>Range: +0</li>
-                    </ul> 
-                    <strong>Other bonuses</strong>
-                    <br/> 
-                    <ul>
-                        <li>Melee strength: +0</li>
-                        <li>Ranged strength: +0</li>
-                        <li>Magic damage: +0%</li>
-                        <li>Prayer: +0</li>
-                    </ul> 
-                    <strong>Target-specific</strong>
-                    <br/> 
-                    <ul>
-                        <li>Undead: +0%</li> 
-                        <li>Slayer: +0%</li>
-                        </ul></div>
-            );
-         
-        }
 
     // These two are used for collecting all parts of the page
     //then compiling it into one renderable package
@@ -150,8 +53,6 @@ class Post extends React.Component{
         );
      }
 
-
-
     render() {
         return (
         this.renderPost()
@@ -159,8 +60,6 @@ class Post extends React.Component{
     }
 
 }
-
-
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -579,21 +478,111 @@ class Search extends Post {
         searchTerm: ''
     }
  
+
+    renderContent() {
+        return (
+            <div className="equipment_grid">
+               <img  src= {worn_equipment_tab} alt="Train"/>
+      
+                <div className='helmet'>
+                    <img className="helmet_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-head.json" title="helmets"/>
+                </div>
+      
+                <div className="cape">
+                    <img className="cape_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-cape.json" title="capes"/>
+                </div>
+      
+                <div className="neck">
+                    <img className="neck_img" src="#"   alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-neck.json" title="necks"/>
+                </div>
+      
+                <div className="ammo">
+                <img  className="ammo_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-ammo.json" title="ammo"/>
+                </div>
+      
+                <div className="weapon">
+                  <img className="weapon_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-weapon.json" title="weapons" />
+                </div>
+      
+                <div className="chest">
+                  <img className="chest_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-body.json" title="chests"/>
+                </div>
+      
+                <div className="sheild">
+                  <img className="sheild_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-shield.json" title="sheilds"/>
+                </div>
+      
+                <div className="legs">
+                  <img className="legs_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-legs.json" title="legs" />
+                </div>
+      
+                <div className="gloves">
+                  <img className="gloves_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-hands.json" title="gloves" />
+                </div>
+      
+                <div className="boots">
+                  <img className="boots_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-feet.json" title="boots" />
+                </div>
+      
+                <div className="ring">
+                  <img className="ring_img" src="#" alt="https://www.osrsbox.com/osrsbox-db/items-json-slot/items-ring.json" title="rings" />
+                </div>
+             </div>
+        );
+    }
+
+    renderStats()
+    {
+        return(
+            <div id="bonuses-output">
+                <strong>Attack bonus</strong>
+                <br/> 
+                <ul>
+                    <li>Stab: +0</li>
+                    <li>Slash: +0</li> 
+                    <li>Crush: +0</li>
+                    <li>Magic: +0</li> 
+                    <li>Range: +0</li>
+                </ul> 
+                <strong>Defence bonus</strong>
+                <br/> 
+                <ul>
+                    <li>Stab: +0</li> 
+                    <li>Slash: +0</li>
+                    <li>Crush: +0</li>
+                    <li>Magic: +0</li> 
+                    <li>Range: +0</li>
+                </ul> 
+                <strong>Other bonuses</strong>
+                <br/> 
+                <ul>
+                    <li>Melee strength: +0</li>
+                    <li>Ranged strength: +0</li>
+                    <li>Magic damage: +0%</li>
+                    <li>Prayer: +0</li>
+                </ul> 
+                <strong>Target-specific</strong>
+                <br/> 
+                <ul>
+                    <li>Undead: +0%</li> 
+                    <li>Slayer: +0%</li>
+                    </ul></div>
+        );
+     
+    }
+
+
     editSearchTerm  = (e) => {
         this.setState( {searchTerm: e.target.value} )
     }
 
-     dynamicSearch = () => {
-        
-      
+    dynamicSearch = () => {
+            
 
-        var aids = this.state.helmets.filter(output => output.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
-        console.log(aids)
-
-        return  aids
+        return  this.state.helmets.filter(output => output.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
     }
 
-    
+
 
     render(){
         return(
