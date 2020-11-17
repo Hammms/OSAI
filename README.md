@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+## What is OSRSAI?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+OSRSAI or Old School Artificial Intelligence is a project of mine that sprouted based off of my love for coding and Oldschool Runescape.
 
-## Available Scripts
+OSRSAI's goal is an attempt to bring artificial Intelligence into Old School Runescape to predict what type of gear is needed for each monster in Runescape. This project was made to train and test my skills with web-based programming as well as AI-based programming.
 
-In the project directory, you can run:
+OSRSAI is built using flask to support the website infrastructure and React to service the User.
+However the Algorithm that will be built is still a work in progress i am expecting to use scikit learn and other python packages such as tensorflow.
 
-### `npm start`
+Current Scope:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] User Authentication (Signin/signout/sessionManagement),
+- [X] Interfacing with OsrsDB to obtain Runescape data see: (https://github.com/osrsbox/osrsbox-db),
+- [X] Referencing Jinja2 rednered code to create dynamic pages based off of a template,
+- [X] Hashing User Passwords,
+- [X] Creating a Base CSS template to visualize and understand website layout (Used PureCSS and some custom code),
+- [X] Reading and wrtiting to a MYSQL database to store user login information securely with Passwords encrypted,
+- [X] UI Design template,
+- [X] Generating a Dynamic Searchbar for selecting weapon equipment 
+- [X] Create a database Init Script incase you ever break your DB
+- [X] Ability to change items within the equipment panel 
+- [X] Understand Git to manage version control 
+- [X] Move projects into a structure that can more easily implement into a large application structure
+- [ ] UX Design Template
+- [ ] User Navigation,
+- [ ] AI Algorithm,
+- [ ] Displaying item statistics,
+- [ ] Determine how you are going to manage the OSRSDB Data for the algorithm 
+- [ ] understanding interfacing between flask and React (Currently backend and frontend are in two different branches)
+- [ ] make equipment items focusable
+- [ ] switch items in pane when searchbar item is selected
+- [ ] Dynamiclly switch the search bar contents when a different item in the equipment pane is focused 
+      
+      
+## Requirements:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Backend
+flask
+flask_login
+flask_sqlalchemy
+flask_wtf
+flask_bcrypt
+wtforms[email]
+pylint
+pymysql
+osrsbox
+cryptography
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Frontend
+Npm
+Nodejs
+Create-react-app
+react-scripts
